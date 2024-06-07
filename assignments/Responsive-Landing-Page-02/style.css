@@ -1,0 +1,247 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: sans-serif;
+}
+
+/* CLOSE HEADER */
+
+header {
+  width: 80%;
+  height: 100px;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 20%;
+  cursor: pointer;
+}
+nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.ul-01 {
+  width: 50%;
+  display: flex;
+  height: 30px;
+  align-items: baseline;
+  padding-top: 15px;
+}
+.ul-01 select {
+  width: 105px;
+  border: none;
+  font-size: 17px;
+  color: gray;
+  cursor: pointer;
+}
+.ul-01-li {
+  display: inline;
+  padding: 0px 15px;
+  font-size: 17px;
+  color: gray;
+  cursor: pointer;
+}
+.ul-02 {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.ul-02-li {
+  display: inline;
+  padding: 0px 15px;
+  font-size: 17px;
+  color: gray;
+  cursor: pointer;
+}
+#signup {
+  background-color: #25dac5;
+  padding: 8px 20px;
+  display: inline;
+  font-size: 17px;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  margin-left: 5px;
+  cursor: pointer;
+}
+#signup:hover {
+  background-color: #21bfad;
+}
+.nav-logo {
+  width: 40px;
+  height: 35px;
+  display: none;
+  cursor: pointer;
+  border: 3px solid #000;
+  border-radius: 5px;
+  margin: 10px;
+}
+.nav-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* CLOSE HEADER */
+/* START CONTENT */
+
+.container {
+  width: 80%;
+  height: 600px;
+  margin-left: 10%;
+  display: flex;
+}
+.left-content {
+  width: 50%;
+  height: 100%;
+}
+.text {
+  width: 100%;
+  margin-top: 40px;
+}
+.text h1 {
+  font-size: 42px;
+  line-height: 52px;
+  text-shadow: 3px 4px 10px rgba(0,0,0,0.6);
+}
+form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 35px;
+}
+form > input {
+  width: 90%;
+  border: none;
+  border-radius: 30px;
+  padding: 12px;
+  outline: 1px solid rgb(169, 164, 164);
+}
+form > button {
+  width: 97%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  outline: 1px solid rgb(169, 164, 164);
+  background-color: #25dac5;
+  color: #fff;
+  cursor: pointer;
+}
+form > button:hover {
+    background-color: #1dc0ad;
+}
+form > p {
+  font-size: 12px;
+  color: rgb(169, 164, 164);
+  text-align: center;
+}
+.right-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+}
+.right-content-card {
+  width: 80%;
+  height: 350px;
+  margin-top: 40px;
+  margin-left: 10%;
+}
+.card-img {
+  width: 100%;
+  height: 210px;
+  border-radius: 5px;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card-p {
+  width: 80%;
+  color: rgb(169, 164, 164);
+  margin-top: 20px;
+  line-height: 28px;
+}
+
+/* CLOSE CONTENT */
+
+@media only screen and (max-width: 990px) {
+  .nav-logo {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  .container {
+    width: 80%;
+    height: 900px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .right-content {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .right-content-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+  .card-p {
+    font-size: 13px;
+  } 
+  .card-img {
+    width: 100%;
+    height: 250px;
+  }
+  .left-content {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 810px) {
+    .logo {
+        width: 25%;
+    }
+  .right-content-card {
+    height: 380px;
+  }
+  .text h1 {
+    font-size: 35px;
+    line-height: 52px;
+  }
+}
+@media only screen and (max-width: 520px) {
+    .logo {
+        width: 35%;
+    }
+    .container {
+        height: 950px;
+    }
+    .right-content-card {
+        width: 90%;
+    }
+    .text h1 {
+        font-size: 28px;
+        line-height: 45px;
+      }
+}

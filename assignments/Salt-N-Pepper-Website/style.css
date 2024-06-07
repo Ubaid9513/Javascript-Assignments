@@ -1,0 +1,727 @@
+@font-face {
+  font-family: "futurak";
+  src: url(./font/futurak.ttf);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: #000;
+  font-family: "apercu";
+}
+/* START NAV-BAR */
+.main {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+.main img {
+  width: 15%;
+  padding: 0.5% 2.5%;
+  cursor: pointer;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin: 40px 25px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav ul li a:hover{
+    color: #ee2e0c;
+    font-size: 18px;
+}
+
+.btn1 {
+  padding: 20px 16px;
+  border-radius: 50px;
+  margin-left: 30px;
+  border: 1px solid #fff;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn1:hover{
+    font-size: 15px;
+    border-color: #ee2e0c;
+}
+.btn2 {
+  padding: 12px 18px;
+  border-radius: 50px;
+  margin: 20px 22px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid #ec3d1e;
+  background-color: #ee2e0c;
+  cursor: pointer;
+}
+.btn2:hover{
+    background-color: #000;
+    font-size: 17px;
+}
+.btn2 i {
+  border-radius: 50%;
+  color: #ff6347;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+}
+/* CLOSE NAV-BAR */
+
+/* START SLIDER */
+.slider {
+  width: 100%;
+  height: 480px;
+  background-image: url(./Images/ac51af11-090c-49e8-9296-472de72fc5cb.webp);
+  background-size: cover;
+  animation: changeimg 15s linear infinite;
+  animation-delay: 1s;
+  cursor: pointer;
+}
+@keyframes changeimg {
+  0% {
+    background-image: url(./Images/ac51af11-090c-49e8-9296-472de72fc5cb.webp);
+  }
+  25% {
+    background-image: url(./Images/c0ac3861-5a22-47cc-8f27-9aaed33c85e0.webp);
+  }
+  50% {
+    background-image: url(./Images/f1542832-c427-43bc-bee3-6e80af4d4569.webp);
+  }
+  75% {
+    background-image: url(./Images/6d49fde6-2e27-4068-8b27-73bd0ee60cde.webp);
+  }
+}
+/* CLOSE SLIDER */
+
+/* START BRAND-SECTION */
+
+.brand-section {
+  width: 100%;
+  height: 600px;
+}
+.brand-section h1 {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.brand-section span{
+    font-family:"futurak";
+    font-size: 55px;
+    letter-spacing: 4px;
+}
+
+.brand-section p {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.brand {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box1 {
+  width: 21%;
+  height: auto;
+  text-align: center;
+  margin-top: 3%;
+  cursor: pointer;
+}
+.img {
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+  margin-left: 10%;
+  margin-top: 3%;
+  border-radius: 3px;
+}
+.img img {
+  padding-top: 20px;
+}
+.box1 button {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+  padding: 18px 50px;
+  border-radius: 50px;
+  margin-top: 30px;
+  margin-left: 3%;
+  cursor: pointer;
+}
+.box1 button:hover{
+    color: #ee2e0c;
+    font-size: 15px;
+}
+/* CLOSE BRAND-SECTION */
+
+/* START RESTAURANT-SECTION */
+
+.restaurant-section{
+  width: 100%;
+  height: 1400px;
+  background-color: #121212;
+}
+
+.restaurant-section-image{
+  position: absolute;
+  width: 100%;
+}
+.restaurant-section-image img{
+  margin-top: 30px;
+  margin-left: 72%;
+}
+
+.restaurant-section .text{
+  color: #fff;
+  text-align: center;
+  padding-top: 7%;
+}
+.restaurant-section .text .one{
+  font-family: "futurak";
+  font-size: 55px;
+  letter-spacing: 4px;
+}
+
+.restaurant-section .text .two{
+  padding-top: 8px;
+  font-size: 55px;
+}
+.restaurant-section .text .para{
+  padding-top: 10px;
+  font-size: 19px;
+  opacity: .7;
+  }
+/* START ISLAMABAD-RESTAURANT */
+
+.restaurant{
+  width: 100%;
+  height: 300px;
+  margin-top: 4%;
+  display: flex;
+}
+.restaurant .details{
+  width: 50%;
+  height: 300px;
+}
+.restaurant .details h4{
+  color:#ff0000;
+  padding-left: 10%;
+  letter-spacing: 6px;
+}
+.restaurant .details .sltn-text{
+color: #fff;
+margin-top: 8px;
+margin-bottom: 20px;
+font-size: 35px;
+}
+.restaurant .details .sltn-text span{
+  padding-left: 10%;
+  color: #fff;
+  font-size: 40px;
+  font-family: "futurak";
+}
+.restaurant .details .para-one{
+  color: #fff;
+  opacity: .7;
+  margin-top: 8px;
+  font-size: 20px;
+  padding-left: 10%;
+  cursor: pointer;
+}
+.restaurant .details .para-one i{
+    font-size: 16px;
+}
+
+.restaurant .details button{
+  border: 1px solid #fff;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50px;
+  margin-left:10% ;
+  margin-top:50px ;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+.restaurant .details button:hover{
+  color: #ec3d1e;
+  font-size: 14px;
+}
+
+.restaurant .details button i{
+  border-radius: 50%;
+  color:#ee2e0c;
+  background-color: #fff;
+  font-size: 20px;
+  padding: 5px;
+}
+
+/* FAISALABAD RESTAURANT */
+
+.restaurants{
+  width: 100%;
+  height: 300px;
+  margin-top: 4%;
+  display: flex;
+}
+.restaurants .detail{
+  width: 60%;
+  height: 300px;
+}
+.restaurants .detail h4{
+  color:#ff0000;
+  padding-left: 12%;
+  letter-spacing: 6px;
+}
+.restaurants .detail .sltn-text{
+color: #fff;
+margin-top: 8px;
+margin-bottom: 20px;
+font-size: 35px;
+}
+.restaurants .detail .sltn-text span{
+  padding-left: 12%;
+  color: #fff;
+  font-size: 40px;
+  font-family: "futurak";
+}
+.restaurants .detail .para-one{
+  color: #fff;
+  opacity: .7;
+  margin-top: 8px;
+  font-size: 20px;
+  padding-left: 12%;
+  cursor: pointer;
+}
+.restaurants .detail .para-one i{
+    font-size: 16px;
+}
+
+.restaurants .detail button{
+  border: 1px solid #fff;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50px;
+  margin-left:12% ;
+  margin-top:50px ;
+  padding: 10px 25px;
+}
+.restaurants .detail button:hover{
+  color: #ec3d1e;
+  font-size: 14px;
+}
+
+.restaurants .detail button i{
+  border-radius: 50%;
+  color:#ee2e0c;
+  background-color: #fff;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.restaurants .images img{
+  padding-left: 12%;
+}
+
+/* CLOSE RESTAURANT */
+
+/* START EXPRESS-SECTION */
+
+.express-section{
+  width: 100%;
+  height: 1800px;
+}
+
+.express-section-image{
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.express-section-image{
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.express-section-para{
+  color: #fff;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-family: "futurak";
+}
+.express-section h1{
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+}
+
+.card{
+  display: flex;
+}
+
+.card1{
+  width: 25%;
+  height: 480px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 6%;
+}
+.card1 img{
+  width: 100%;
+  border-radius: 8px;
+}
+.card1-h1{
+  color:#ec3d1e ;
+  letter-spacing: 2px;
+  padding-top: 10px;
+}
+.card1-p2{
+  font-size: 30px;
+  padding-top: 10px;
+  color: #FFF;
+}
+.card1-p2 span{
+  font-family: "futurak";
+}
+.card1-p3{
+  font-size: 17px;
+  padding-top: 12px;
+  color: #FFF;
+  cursor: pointer;
+  opacity: .7;
+}
+
+.btn{
+  padding: 11px 22px;
+  margin-top: 40px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover{
+  color: #ec3d1e;
+  font-size: 14px;
+}
+
+.btn i{
+ color: #ec3d1e;
+ border-radius: 50px;
+ background-color: #fff;
+ font-size: 20px;
+ padding: 6px;
+}
+      /* CLOSE EXPRESS-SECTION */
+
+      /* START VILLAGE-SECTION */
+.village-section{
+  width: 100%;
+  height: 600px;
+  background-color:  #121212;
+}
+.village-para{
+  color: #FFF;
+  text-align: center;
+  font-size: 55px;
+  padding-top: 3%;
+}
+.village-para span{
+  font-family: "futurak";
+}
+.village-container{
+  width: 100%;
+  height: 350px;
+  padding-top: 3%;
+  display: flex;
+}
+.village-container img{
+  width: 50%;
+  height: 100%;
+  
+}
+.village-text{
+  width: 100%;
+  height: 100%;
+}
+.village-p1{
+  padding-left: 6%;
+  color: #ec3d1e;
+  padding-top: 10%;
+  letter-spacing: 8px;
+}
+.village-p2{
+  font-size: 40px;
+  padding-left: 6%;
+  color: #FFF;
+  padding-top: 5px;
+}
+.village-p2 span{
+  font-family:"futurak";
+}
+.village-p4{
+  padding-top: 4%;
+  color: #FFF;
+  opacity: .7;
+  padding-left: 6%;
+  font-size: 18px;
+  cursor: pointer;
+}
+.village-p5{
+  padding-top: 10px;
+  color: #FFF;
+  opacity: .7;
+  padding-left: 6%;
+  font-size: 18px;
+  cursor: pointer;
+}
+.village-btn{
+  background-color: #28A745;
+  color: #FFF;
+  padding: 10px 25px;
+  margin-left: 6%;
+  margin-top: 4%;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.village-btn:hover{
+  font-size: 15px;
+}
+
+.village-btn i{
+  background-color: #FFF;
+  color: #28A745;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+  /* CLOSE VILLAGE-SECTION */
+
+/* START LOCATION-SECTION */
+
+.location-section{
+  width: 100%;
+  height: 1250px;
+  
+}
+.location-para{
+  font-family: "futurak";
+  color: #FFF;
+  text-align: center;
+  font-size: 55px;
+  padding-top: 5%;
+}
+.location-h1{
+  font-size: 50px;
+  color: #FFF;
+  text-align: center;
+}
+.location-h1 span{
+  font-size: 28px;
+}
+.location-row{
+  display: flex;
+}
+.location-card{
+  width: 30%;
+  height: 300px;
+  margin-top: 3%;
+  background-color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  margin-left: 2.5%;
+}
+.location-card img{
+  padding-top: 6%;
+}
+.location-card-p1{
+  font-size: 10px;
+  letter-spacing: 5px;
+  padding-top: 15px;
+  color: #ec3d1e;
+}
+.location-card-p2{
+  font-family: "futurak";
+  font-size: 25px;
+  padding-top: 10px;
+}
+.location-card-h2{
+  font-weight: bold;
+}
+/* CLOSE LOCATION-SECTION */
+
+/* START SOCIAL-FEED-SECTION */
+
+.social-feed-section{
+  width: 100%;
+  height: 380px;
+}
+.social-feed-section h1{
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+}
+
+.social-feed-cards{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.social-feed-card{
+  width: 18%;
+}
+.social-feed-card img{
+  width: 100%;
+  padding-top: 10%;
+  cursor: pointer;
+}
+/* CLOSE SOCIAL-FEED-SECTION */
+
+/* START FOOTER */
+
+.footer{
+  width: 100%;
+  height: 450px;
+  background-color: #121212;
+  display: flex;
+}
+.footer-text{
+  width: 30%;
+  height: 100%;
+}
+.footer-image img{
+  width: 45%;
+  margin-top: 15%;
+  margin-left: 8%;
+  cursor: pointer;
+}
+.footer-p{
+  font-size: 20px;
+  margin-left: 8%;
+  margin-top: 20px;
+  color: #fff;
+  opacity: .7;
+}
+.footer-p2{
+  font-size: 20px;
+  margin-left: 8%;
+  margin-top: 20px;
+  color: #fff;
+  opacity: .7;
+  cursor: pointer;
+}
+
+.footer-links{
+  width: 15%;
+  height: 100%;
+  /* background-color: #28A745; */
+}
+.footer-links h2{
+  color: #fff;
+  margin-top: 30%;
+  margin-left: 27%;
+  font-size: 20px;
+}
+.footer-p1{
+  color: #fff;
+  opacity: .7;
+  font-size: 20px;
+  margin-top: 8%;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.footer-contact{
+  width: 25%;
+  height: 100%;
+  /* background-color: #ec3d1e; */
+}
+
+.footer-contact h2{
+  color: #fff;
+  margin-top: 18%;
+  margin-left: 15%;
+  font-size: 20px;
+}
+.footer-contact-p{
+  color: #fff;
+  opacity: .7;
+  font-size: 18px;
+  margin-top: 8%;
+  margin-left: 45px;
+  cursor: pointer;
+}
+
+.footer-follow{
+  width: 30%;
+  height: 100%;
+}
+.footer-follow h2{
+  color: #fff;
+  margin-top: 14%;
+  margin-left: 15%;
+  font-size: 20px;
+}
+.icon{
+  height: 50px;
+  margin-top: 8%;
+  margin-left: 15%;
+}
+.icon a{
+  border-radius: 50px 50PX;
+  background-color: #ec3d1e;
+  color: #fff;
+  padding: 15px;  
+}
+.footer-follow-img1{
+  margin-top: 3%;
+  margin-left: 15%;
+  cursor: pointer;
+}
+.footer-follow-img2{
+  margin-top: 2%;
+  margin-left: 15%;
+  cursor: pointer;
+}
+.footer-bottom{
+  width: 100%;
+  height: 50px;
+  background-color: #121212;
+}
+.hr{
+  color: #fff;
+  opacity: .2;
+}
+
+.footer-bottom{
+  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
+}
+.p1{
+  color: #fff;
+  opacity: .7;
+  margin-left: 5%;
+  margin-top: 15px;
+}
+.p2{
+  color: #fff;
+  text-align: end;
+  margin-right: 5%;
+  margin-top: 15px;
+  opacity: .7;
+}

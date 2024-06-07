@@ -1,0 +1,11 @@
+.card{
+    width: fit-content;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.8rem;
+    padding:10px 30px;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
