@@ -58,3 +58,52 @@
 // console.log(arrColor);
 // arrColor.splice(prompt("Enter index Num"),prompt("Enter index Color"));
 // console.log(arrColor);
+
+// Que No. 10
+let studentScore = [320,480,210,120];
+document.write("Scores of Students : " + studentScore + "<br>")
+studentScore.sort()
+document.write("Ordered Scores of Students : " + studentScore + "<br>"  + "<br>")
+
+// Que No. 11
+let cities = ["karachi","lahore","islamabad","peshawar","Quetta"];
+document.write("Cities list :" + "<br>");
+document.write(cities + "<br>");
+document.write("Selected Cities List:" + "<br>");
+let SelectedCities = cities.slice(1,3);
+document.write(SelectedCities + "<br>" + "<br>");
+
+// Que No. 12
+
+document.write("Array :" + "<br>")
+let joinArr = ["This","is","a","book"];
+document.write(joinArr + "<br>" + "<br>");
+document.write("String :" + "<br>");
+let joinedArr = joinArr.join(" ");
+document.write(joinedArr + "<br>");
+
+// Que No. 13
+
+let computerParts = ["keyboard", "mouse", "monitor", "printer"];
+document.write("Devices: " + "<br>");
+document.write(computerParts + "<br>" + "<br>");
+let out = "out :";
+for (var i = 0; i < computerParts.length; i++) {
+  document.write(out + "<br>");
+  document.write(computerParts[i] + "<br>" + "<br>");
+}
+
+
+// Que No. 14
+let computerPartsReverse = ["keyboard", "mouse", "monitor", "printer"].reverse();
+document.write("Devices: " + "<br>");
+document.write(computerPartsReverse + "<br>");
+let out1 = "out :";
+for (var j = 0; j < computerPartsReverse.length; j++) {
+  document.write(out1 + "<br>");
+  document.write(computerPartsReverse[j] + "<br>");
+}
+
+
+// Que No. 15
+
